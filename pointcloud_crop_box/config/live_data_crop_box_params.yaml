@@ -1,0 +1,23 @@
+/**:
+  ros__parameters:
+    target_frame: base_link
+    crop_boxes_names: ["robot_box","camera_pole"]
+    crop_boxes:
+      robot_box:
+        min_x: -0.394
+        max_x:  0.356
+        min_y: -0.25                  
+        max_y:  0.25
+        min_z: -0.345
+        max_z:  0.0
+      camera_pole:
+        min_x: -0.394
+        max_x:  0.356
+        min_y: -0.25
+        max_y:  0.25
+        min_z:  0.0
+        max_z:  0.75
+    negative: true
+    message_type: pointcloud
+    input_topic: "/livox/points"
+    output_topic: "/livox/filtered"

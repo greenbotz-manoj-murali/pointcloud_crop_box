@@ -1,0 +1,23 @@
+/**:
+  ros__parameters:
+    target_frame: base_link
+    crop_boxes_names: ["robot_footprint","camera_pole"]
+    crop_boxes:
+      robot_footprint:
+        min_x: -0.394
+        max_x:  0.356
+        min_y: -0.25
+        max_y:  0.25
+        min_z: -0.345
+        max_z:  0.0
+      camera_pole:
+        min_x: -0.394
+        max_x:  0.356
+        min_y: -0.25
+        max_y:  0.25
+        min_z:  0.0
+        max_z:  1.0
+    negative: true
+    message_type: pointcloud
+    input_topic: "/livox/deskewed_points"
+    output_topic: "/livox/deskewed_points_filtered"
